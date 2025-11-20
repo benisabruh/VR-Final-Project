@@ -2916,10 +2916,6 @@ PrefabInstance:
     - {fileID: 5430152558404011643, guid: d9470993b9bd0a541a884d6f6704a421, type: 3}
     - {fileID: 7803313389024695174, guid: d9470993b9bd0a541a884d6f6704a421, type: 3}
     - {fileID: 4094713249064622096, guid: d9470993b9bd0a541a884d6f6704a421, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 992558480225725475, guid: d9470993b9bd0a541a884d6f6704a421, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 1178128812}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6041712068339329030, guid: d9470993b9bd0a541a884d6f6704a421, type: 3}
       insertIndex: -1
@@ -4891,7 +4887,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1072054303}
-  m_Father: {fileID: 574312336}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1456943186
 MonoBehaviour:
@@ -4997,7 +4992,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 786975283}
-  m_Father: {fileID: 574312336}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1474538557
 MonoBehaviour:
@@ -9618,9 +9612,7 @@ SceneRoots:
   - {fileID: 500937217}
   - {fileID: 914056150}
   - {fileID: 791177772}
-  - {fileID: 917490420}
   - {fileID: 406600133}
-  - {fileID: 574312335}
   - {fileID: 1868617485}
   - {fileID: 1876139224}
   - {fileID: 360922994}
