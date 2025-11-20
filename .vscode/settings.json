@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "VR_Final_Project.sln"
+    "dotnet.defaultSolution": "VR-Final-Project.sln"
 }
