@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class Lazers : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject lazer;
+    public GameObject destination;
+    public GameObject sourcesParent;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        foreach (Transform child in sourcesParent.transform)
+        {
+            Instantiate(this.lazer, Vector3.zero, Quaternion.identity).GetComponent<Lazer>().Init(child.position, destination);
+        }
     }
 }
