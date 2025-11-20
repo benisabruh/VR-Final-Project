@@ -75,6 +75,9 @@ EditorBuildSettings:
     path: Assets/Challenges/03_Training/Scenes/Training_Prototype_Broken.unity
     guid: e10ba84ccef4c43aa995ace104c1bf8c
   - enabled: 1
+    path: Assets/Scenes/Lazer Puzzle.unity
+    guid: 8454c264a8d334779ba86d2f47d360dd
+  - enabled: 1
     path: Assets/Scenes/maze Room.unity
     guid: 2d7559b5bceeb4aeaa5a3ec4921408fa
   - enabled: 1
