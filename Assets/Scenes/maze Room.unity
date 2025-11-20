@@ -2125,7 +2125,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 27be82cf253c5402db2bb1d4ecc196b7, type: 2}
     - target: {fileID: 919132149155446097, guid: 5c1c2a38ac44f4456b35e48aae8bed72, type: 3}
       propertyPath: m_Name
-      value: Maze_V1
+      value: labyrinth
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3451118302482216456, guid: 5c1c2a38ac44f4456b35e48aae8bed72, type: 3}
@@ -2144,9 +2144,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5c1c2a38ac44f4456b35e48aae8bed72, type: 3}
       insertIndex: -1
       addedObject: {fileID: 360923003}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5c1c2a38ac44f4456b35e48aae8bed72, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 360923007}
   m_SourcePrefab: {fileID: 100100000, guid: 5c1c2a38ac44f4456b35e48aae8bed72, type: 3}
 --- !u!1 &360922995 stripped
 GameObject:
@@ -2347,20 +2344,6 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!114 &360923007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360922995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 162b4e5a3d1fcd043afbc6bf71ab2e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRDualGrabFreeTransformer
-  m_MultiSelectPosition: 0
-  m_MultiSelectRotation: 2
 --- !u!1 &405369665
 GameObject:
   m_ObjectHideFlags: 0
@@ -9604,6 +9587,6 @@ SceneRoots:
   - {fileID: 406600133}
   - {fileID: 574312335}
   - {fileID: 1868617485}
+  - {fileID: 100663552}
   - {fileID: 1876139224}
   - {fileID: 360922994}
-  - {fileID: 100663552}
