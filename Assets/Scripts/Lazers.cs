@@ -10,11 +10,11 @@ public class Lazers : MonoBehaviour
 
     [SerializeField]
     [Tooltip("Lazer destination")]
-    GameObject destination;
+    GameObject[] destinations;
 
     [SerializeField]
     [Tooltip("Parent object of lazer sources")]
-    GameObject sourcesParent;
+    GameObject[] sourcesParents;
 
     [SerializeField]
     [Tooltip("Parent object of lazer targets")]
@@ -28,12 +28,14 @@ public class Lazers : MonoBehaviour
 
     void Start()
     {
-        foreach (Transform child in sourcesParent.transform)
-        {
-            var lazer = Instantiate(this.lazer, Vector3.zero, Quaternion.identity);
-            lazer.GetComponent<Lazer>().Init(child.position, destination);
-            if (lazerMaterial == null) lazerMaterial = lazer.GetComponent<LineRenderer>().material;
-        }
+        if (destinations.Length != sourcesParents.Length) Debug.LogError("Destinations and sources must match");
+        for (var i = 0; i < destinations.Length; i++)
+            foreach (Transform child in sourcesParents[i].transform)
+            {
+                var lazer = Instantiate(this.lazer, Vector3.zero, Quaternion.identity);
+                lazer.GetComponent<Lazer>().Init(child.position, destinations[i]);
+                if (lazerMaterial == null) lazerMaterial = lazer.GetComponent<LineRenderer>().material;
+            }
         unlitMaterial = targetsParent.transform.GetChild(0).gameObject.GetComponent<Renderer>().material;
     }
 
@@ -42,19 +44,19 @@ public class Lazers : MonoBehaviour
         var hitObjects = new List<GameObject>();
         var hits = 0;
 
-        for (var i = 0; i < sourcesParent.transform.childCount; i++)
-        {
-            var source = sourcesParent.transform.GetChild(i).transform;
-            RaycastHit hit;
-            var maxDistance = Vector3.Distance(source.position, destination.transform.position);
-            var direction = (destination.transform.position - source.position).normalized;
-            if (Physics.Raycast(source.position, direction, out hit, maxDistance) && hit.collider.tag == "Target")
+        for (var i = 0; i < destinations.Length; i++)
+            foreach (Transform source in sourcesParents[i].transform)
             {
-                hit.collider.gameObject.GetComponent<Renderer>().material = lazerMaterial;
-                hitObjects.Add(hit.collider.gameObject);
-                hits++;
+                RaycastHit hit;
+                var maxDistance = Vector3.Distance(source.position, destinations[i].transform.position);
+                var direction = (destinations[i].transform.position - source.position).normalized;
+                if (Physics.Raycast(source.position, direction, out hit, maxDistance) && hit.collider.tag == "Target")
+                {
+                    hit.collider.gameObject.GetComponent<Renderer>().material = lazerMaterial;
+                    hitObjects.Add(hit.collider.gameObject);
+                    hits++;
+                }
             }
-        }
 
         var missed = new List<GameObject>();
         foreach (Transform target in targetsParent.transform)
