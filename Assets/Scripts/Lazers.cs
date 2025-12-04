@@ -26,9 +26,18 @@ public class Lazers : MonoBehaviour
     Material lazerMaterial;
     Material unlitMaterial;
 
+    void OnValidate()
+    {
+
+        if (destinations.Length != sourcesParents.Length)
+        {
+            Debug.LogError("Destinations and sources must match. Sources will be truncated.");
+            Array.Resize(ref sourcesParents, destinations.Length);
+        }
+    }
+
     void Start()
     {
-        if (destinations.Length != sourcesParents.Length) Debug.LogError("Destinations and sources must match");
         for (var i = 0; i < destinations.Length; i++)
             foreach (Transform child in sourcesParents[i].transform)
             {
