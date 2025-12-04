@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using System.Collections.Generic;
 using System;
 
@@ -23,8 +24,13 @@ public class Lazers : MonoBehaviour
     [NonSerialized]
     public bool done = false;
 
-    Material lazerMaterial;
-    Material unlitMaterial;
+    [NonSerialized]
+    public UnityEvent solved = new UnityEvent();
+
+    [NonSerialized]
+    public Material lazerMaterial;
+    [NonSerialized]
+    public Material unlitMaterial;
 
     void OnValidate()
     {
@@ -82,9 +88,9 @@ public class Lazers : MonoBehaviour
             if (!done)
             {
                 done = true;
-                Debug.Log("All targets hit!");
+                solved.Invoke();
             }
         }
-        else if (done) done = false;
+        else if (done) { done = false; solved.Invoke(); }
     }
 }
