@@ -13,6 +13,7 @@ TagManager:
   - Trail
   - PickUp
   - Target
+  - Button
   layers:
   - Default
   - TransparentFX

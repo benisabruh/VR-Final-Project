@@ -306,8 +306,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 169952, guid: a8db70ed00a022d4ca7f82df02fbc4fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 37164589}
   m_SourcePrefab: {fileID: 100100000, guid: a8db70ed00a022d4ca7f82df02fbc4fb, type: 3}
+--- !u!1 &37164588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 169952, guid: a8db70ed00a022d4ca7f82df02fbc4fb, type: 3}
+  m_PrefabInstance: {fileID: 37164587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &37164589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37164588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ad86f52f24dc942bac425d1b2fec16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUpObject
 --- !u!1 &96020995
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,8 +532,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 106480, guid: 825145a142d78c74b8962c930ad0d269, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 140408942}
   m_SourcePrefab: {fileID: 100100000, guid: 825145a142d78c74b8962c930ad0d269, type: 3}
+--- !u!1 &140408941 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 106480, guid: 825145a142d78c74b8962c930ad0d269, type: 3}
+  m_PrefabInstance: {fileID: 140408940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &140408942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140408941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ad86f52f24dc942bac425d1b2fec16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUpObject
 --- !u!1001 &158282375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1048,7 +1088,7 @@ GameObject:
   - component: {fileID: 353457617}
   m_Layer: 0
   m_Name: Button1
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1139,7 +1179,7 @@ Transform:
   m_GameObject: {fileID: 353457611}
   serializedVersion: 2
   m_LocalRotation: {x: 0.2156466, y: -0, z: -0, w: 0.9764715}
-  m_LocalPosition: {x: 0.19683754, y: -0.0218, z: 0.037865877}
+  m_LocalPosition: {x: 0.19683754, y: 0, z: 0.037865877}
   m_LocalScale: {x: 0.094166, y: 0.048368454, z: 0.083916135}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3130,6 +3170,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff457133ad79e04fb16522711c7b79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  deadTime: 1
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1390244451
 GameObject:
   m_ObjectHideFlags: 0
@@ -3142,6 +3189,7 @@ GameObject:
   - component: {fileID: 1390244454}
   - component: {fileID: 1390244453}
   - component: {fileID: 1390244452}
+  - component: {fileID: 1390244456}
   m_Layer: 0
   m_Name: Collectible
   m_TagString: PickUp
@@ -3243,6 +3291,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1390244456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390244451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ad86f52f24dc942bac425d1b2fec16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUpObject
 --- !u!1 &1442585280 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1644074631896904345, guid: eb91affb984e740dbb2082626ba96efb, type: 3}
@@ -4665,7 +4725,7 @@ Transform:
   m_GameObject: {fileID: 2075191677}
   serializedVersion: 2
   m_LocalRotation: {x: 0.2156466, y: -0, z: -0, w: 0.9764715}
-  m_LocalPosition: {x: -0.20009589, y: -0.019198298, z: 0.03950143}
+  m_LocalPosition: {x: -0.20009589, y: 0, z: 0.03950143}
   m_LocalScale: {x: 0.094166, y: 0.04006307, z: 0.083916135}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4776,7 +4836,7 @@ Transform:
   m_GameObject: {fileID: 2098209353}
   serializedVersion: 2
   m_LocalRotation: {x: 0.2156466, y: -0, z: -0, w: 0.9764715}
-  m_LocalPosition: {x: -0.0028731823, y: -0.025, z: 0.05094886}
+  m_LocalPosition: {x: -0.0028731823, y: 0, z: 0.05094886}
   m_LocalScale: {x: 0.094166, y: 0.03517889, z: 0.083916135}
   m_ConstrainProportionsScale: 0
   m_Children: []
