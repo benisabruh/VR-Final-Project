@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8a81db11f5dc3b24da8db9d77be45138
+timeCreated: 1453650792
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 54999
+  packageName: Fantasy Staff Lite
+  packageVersion: 1.0
+  assetPath: Assets/AdventureForge/Geometry/Metalstaff01/Materials/Metalstaff01Ring.mat
+  uploadId: 100741

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f3f4c345a6c2c95428f45f122dd9ad20
+timeCreated: 1453660285
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 54999
+  packageName: Fantasy Staff Lite
+  packageVersion: 1.0
+  assetPath: Assets/AdventureForge/AnimationCtrl/Metalstaff01/Metalstaff01AnimCtrl.controller
+  uploadId: 100741
