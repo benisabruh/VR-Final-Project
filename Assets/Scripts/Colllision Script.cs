@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CollissionScript : MonoBehaviour
+public class ColllisionScript : MonoBehaviour
 {
     Vector3 targetPosition = new Vector3(-0.327f, -0.106f, -1.53f);
     Vector3 direction = new Vector3(-0.327f, 4f, -1.53f);
@@ -36,7 +36,7 @@ public class CollissionScript : MonoBehaviour
         
         GetComponent<Collider>().enabled = false;
         transform.eulerAngles = new Vector3(90f, 0f, 0f);
-        while (gemeObject.transform.position != targetPosition /*|| this.transform.rotation != targetRotation*/){
+        while (gemaObject.transform.position != targetPosition /*|| this.transform.rotation != targetRotation*/){
             float step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
             //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, step);
