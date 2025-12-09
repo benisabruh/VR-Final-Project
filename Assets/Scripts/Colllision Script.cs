@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CollissionScript : MonoBehaviour
+public class ColllisionScript : MonoBehaviour
 {
     Vector3 targetPosition = new Vector3(-0.327f, -0.106f, -1.53f);
     Vector3 direction = new Vector3(-0.327f, 4f, -1.53f);
