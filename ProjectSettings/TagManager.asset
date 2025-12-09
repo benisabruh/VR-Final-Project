@@ -13,6 +13,8 @@ TagManager:
   - Trail
   - PickUp
   - Target
+  - star
+  - marble
   layers:
   - Default
   - TransparentFX
