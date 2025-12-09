@@ -25,16 +25,7 @@ public class CollissionScript : MonoBehaviour
         //target.transform.position = new Vector3(-0.327f, -0.106f, -1.53f);
         //Quaternion targetRotation = Quaternion.Euler(90,0,0);
     }
-    void Update(){
-        if (startTime > 0){
-            startTime -= Time.deltaTime;
-        }
-        else if(startTime == 0){
-            this.moveToStart();
-            startTime -= 1f;
-        }
 
-    }
     void onTriggerEnter(Collider col){
         if(col.GetComponent<Collider>().name == "Wire"){
             this.moveToStart();
