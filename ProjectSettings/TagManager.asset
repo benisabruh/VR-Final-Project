@@ -12,6 +12,7 @@ TagManager:
   - Flame
   - Trail
   - PickUp
+  - Target
   layers:
   - Default
   - TransparentFX
