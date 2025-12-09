@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 9a763c773ef7fff45b44fbb1a796b309
+labels:
+- pbr
+- mage
+- sorcerer
+- wizzard
+- magical
+- magic
+- glowing
+- emission
+- steampunk
+- staff
+- weapon
+- medieval
+- fantasy
+- decorating
+- lighting
+- decoration
+timeCreated: 1454236971
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 54999
+  packageName: Fantasy Staff Lite
+  packageVersion: 1.0
+  assetPath: Assets/AdventureForge/PreFab/Metalstaff01/512/Metalstaff01.prefab
+  uploadId: 100741

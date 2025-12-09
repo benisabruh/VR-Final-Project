@@ -22,6 +22,8 @@ MonoBehaviour:
   m_Scenes:
   - m_enabled: 1
     m_path: Assets/Scenes/VR Room.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Ring MAze.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings:
@@ -1037,6 +1039,8 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 1125746112663650501
       type: {class: AndroidPlatformBuildSettings, ns: UnityEditor.Android, asm: UnityEditor.Android.Extensions}
       data:
