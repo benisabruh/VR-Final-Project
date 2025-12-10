@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using System;
 
 public class Winning : MonoBehaviour
 {
@@ -14,8 +15,15 @@ public class Winning : MonoBehaviour
         if (grab == null){
             Debug.Log("Error, no grab interactable");
         }
-        else if (grab != null){
+    }
+    void OnEnable(){
+        if (grab != null){
             grab.selectEntered.AddListener(OnGrab);
+        }
+    }
+    void OnDisable(){
+        if (grab != null){
+            grab.selectEntered.RemoveListener(OnGrab);
         }
     }
     void OnGrab(SelectEnterEventArgs args){
