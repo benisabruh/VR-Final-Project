@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
  using UnityEngine;
  using System.Collections;
+=======
+// using UnityEngine;
+>>>>>>> parent of 0ebd199 (Attempt to finish again)
 =======
 // using UnityEngine;
 >>>>>>> parent of 0ebd199 (Attempt to finish again)
@@ -21,6 +25,7 @@ public class MovingToStart : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
 <<<<<<< HEAD
+<<<<<<< HEAD
      void Start()
      {
         key.gameObject.SetActive(false);
@@ -30,6 +35,8 @@ public class MovingToStart : MonoBehaviour
              Debug.Log("This exists");
          }
 =======
+=======
+>>>>>>> parent of 0ebd199 (Attempt to finish again)
 //     void Start()
 //     {
 //         Debug.Log("HI");
@@ -37,6 +44,9 @@ public class MovingToStart : MonoBehaviour
 //         if (GetComponent<Collider>() != null){
 //             Debug.Log("This exists");
 //         }
+<<<<<<< HEAD
+>>>>>>> parent of 0ebd199 (Attempt to finish again)
+=======
 >>>>>>> parent of 0ebd199 (Attempt to finish again)
         
 //         //target = ring.transform;
