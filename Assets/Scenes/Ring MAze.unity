@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 129478766}
   m_Layer: 0
   m_Name: Cylinder (5)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 174936715}
   m_Layer: 0
   m_Name: Cylinder (9)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -401,7 +401,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
 --- !u!1001 &189898148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -536,8 +535,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2039533825}
   m_SourcePrefab: {fileID: 100100000, guid: 78df1db2fbc8ec64f949fac0c05bf693, type: 3}
-=======
->>>>>>> parent of 2837a79 (Merge branch 'main' of https://github.com/benisabruh/VR-Final-Project)
 --- !u!1 &230182096
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +550,7 @@ GameObject:
   - component: {fileID: 230182101}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -771,7 +768,7 @@ GameObject:
   - component: {fileID: 310965458}
   m_Layer: 0
   m_Name: Cylinder (5)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -991,7 +988,7 @@ GameObject:
   - component: {fileID: 465255853}
   m_Layer: 0
   m_Name: Cylinder (3)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1132,7 +1129,7 @@ GameObject:
   - component: {fileID: 480632161}
   m_Layer: 0
   m_Name: Cylinder (7)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1273,7 +1270,7 @@ GameObject:
   - component: {fileID: 516193713}
   m_Layer: 0
   m_Name: Cylinder (11)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1624,7 +1621,7 @@ GameObject:
   - component: {fileID: 556920272}
   m_Layer: 0
   m_Name: Cylinder (8)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1765,7 +1762,7 @@ GameObject:
   - component: {fileID: 565802301}
   m_Layer: 0
   m_Name: Cylinder (11)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1906,7 +1903,7 @@ GameObject:
   - component: {fileID: 579041741}
   m_Layer: 0
   m_Name: Cylinder (10)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2032,7 +2029,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
 --- !u!1 &593206511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2643,8 +2639,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685575122}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-=======
->>>>>>> parent of 2837a79 (Merge branch 'main' of https://github.com/benisabruh/VR-Final-Project)
 --- !u!1 &692476641
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,7 +2654,7 @@ GameObject:
   - component: {fileID: 692476646}
   m_Layer: 0
   m_Name: Cylinder (4)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2802,7 +2796,7 @@ GameObject:
   - component: {fileID: 736621372}
   m_Layer: 0
   m_Name: Cylinder (3)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2966,7 +2960,7 @@ GameObject:
   - component: {fileID: 737973576}
   m_Layer: 0
   m_Name: Cylinder (6)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3748,7 +3742,7 @@ GameObject:
   - component: {fileID: 742151336}
   m_Layer: 0
   m_Name: Cylinder (9)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3920,7 +3914,7 @@ GameObject:
   - component: {fileID: 838422846}
   m_Layer: 0
   m_Name: Cylinder (10)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4120,7 +4114,7 @@ GameObject:
   - component: {fileID: 926319099}
   m_Layer: 0
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4586,7 +4580,7 @@ GameObject:
   - component: {fileID: 1090926835}
   m_Layer: 0
   m_Name: Cylinder (7)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4793,7 +4787,7 @@ GameObject:
   - component: {fileID: 1123921383}
   m_Layer: 0
   m_Name: Wire
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4886,7 +4880,7 @@ Transform:
   m_GameObject: {fileID: 1123921376}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.313, y: 0.026, z: 0.982}
+  m_LocalPosition: {x: -0.313, y: 0.026, z: 0.966}
   m_LocalScale: {x: 0.17, y: 0.21999998, z: 0.17}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5903,7 +5897,7 @@ GameObject:
   - component: {fileID: 1283389999}
   m_Layer: 0
   m_Name: Cylinder (13)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7312,7 +7306,7 @@ GameObject:
   - component: {fileID: 1532387840}
   m_Layer: 0
   m_Name: Cylinder (4)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7464,7 +7458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 408176, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.326
+      value: -0.32
       objectReference: {fileID: 0}
     - target: {fileID: 408176, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7472,7 +7466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 408176, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.53
+      value: -1.5448
       objectReference: {fileID: 0}
     - target: {fileID: 408176, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7557,20 +7551,13 @@ PrefabInstance:
       addedObject: {fileID: 1641383707}
     - targetCorrespondingSourceObject: {fileID: 108428, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1641383706}
+      addedObject: {fileID: 1641383704}
     - targetCorrespondingSourceObject: {fileID: 108428, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
       insertIndex: -1
-<<<<<<< HEAD
       addedObject: {fileID: 1641383708}
     - targetCorrespondingSourceObject: {fileID: 108428, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1641383711}
-=======
-      addedObject: {fileID: 1641383705}
-    - targetCorrespondingSourceObject: {fileID: 108428, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1641383704}
->>>>>>> parent of 2837a79 (Merge branch 'main' of https://github.com/benisabruh/VR-Final-Project)
     - targetCorrespondingSourceObject: {fileID: 102510, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
       insertIndex: -1
       addedObject: {fileID: 897285975}
@@ -7713,38 +7700,6 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!114 &1641383705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641383703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5cfd21701597134e8d7c018d817a82d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollissionScript
-  speed: 1
-  ring: {fileID: 1641383703}
---- !u!114 &1641383706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641383703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3091df4a2b358e04bb0c5026f5af0492, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MysteryStudio.EasyCollider.AddCollidersToMeshes
-  colliderType: 0
-  applyToChildren: 1
-  convex: 0
-  showColliderPreview: 0
-  selectedTag: Untagged
-  selectedLayer: 0
 --- !u!54 &1641383707
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7772,7 +7727,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
 --- !u!114 &1641383708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7811,8 +7765,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
-=======
->>>>>>> parent of 2837a79 (Merge branch 'main' of https://github.com/benisabruh/VR-Final-Project)
 --- !u!1 &1655364107
 GameObject:
   m_ObjectHideFlags: 0
@@ -7933,7 +7885,7 @@ GameObject:
   - component: {fileID: 1694383498}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8129,7 +8081,7 @@ GameObject:
   - component: {fileID: 1731077997}
   m_Layer: 0
   m_Name: Cylinder (6)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8270,7 +8222,7 @@ GameObject:
   - component: {fileID: 1736016334}
   m_Layer: 0
   m_Name: Cylinder (12)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8617,7 +8569,7 @@ GameObject:
   - component: {fileID: 1825876092}
   m_Layer: 0
   m_Name: Cylinder (8)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8913,7 +8865,7 @@ GameObject:
   - component: {fileID: 1856535286}
   m_Layer: 0
   m_Name: Cylinder (12)
-  m_TagString: Untagged
+  m_TagString: wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9045,7 +8997,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &1936985600
 GameObject:
   m_ObjectHideFlags: 0
@@ -9361,9 +9312,6 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &2058531575
-=======
---- !u!1 &2077181631
->>>>>>> parent of 2837a79 (Merge branch 'main' of https://github.com/benisabruh/VR-Final-Project)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9559,3 +9507,5 @@ SceneRoots:
   - {fileID: 1432054471}
   - {fileID: 1123921380}
   - {fileID: 1641383702}
+  - {fileID: 596569657}
+  - {fileID: 220648876}
