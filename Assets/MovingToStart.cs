@@ -1,4 +1,4 @@
-// using UnityEngine;
+ using UnityEngine;
 
 public class MovingToStart : MonoBehaviour
 {
@@ -6,7 +6,7 @@ public class MovingToStart : MonoBehaviour
     Vector3 direction = new Vector3(-0.327f, 4f, -1.53f);
  
     
-//     public float speed = 1f;
+     public float speed = 1f;
 
 
     private Transform target;
@@ -15,18 +15,18 @@ public class MovingToStart : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
-//     void Start()
-//     {
-//         Debug.Log("HI");
-//         Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up);
-//         if (GetComponent<Collider>() != null){
-//             Debug.Log("This exists");
-//         }
+     void Start()
+     {
+         Debug.Log("HI");
+         Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up);
+         if (GetComponent<Collider>() != null){
+             Debug.Log("This exists");
+         }
         
-//         //target = ring.transform;
-//         //target.transform.position = new Vector3(-0.327f, -0.106f, -1.53f);
-//         //Quaternion targetRotation = Quaternion.Euler(90,0,0);
-//     }
+         //target = ring.transform;
+         //target.transform.position = new Vector3(-0.327f, -0.106f, -1.53f);
+         //Quaternion targetRotation = Quaternion.Euler(90,0,0);
+     }
 
     void onTriggerEnter(Collider col){
         if(col.tag == "wire"){
@@ -51,9 +51,9 @@ public class MovingToStart : MonoBehaviour
         obj.GetComponent<Collider>().enabled = true;
        // GetComponent<Rigidbody>().enabled = true;
         
-//     }
+     }
 
-//     // Update is called once per frame
+     // Update is called once per frame
 
         
         
