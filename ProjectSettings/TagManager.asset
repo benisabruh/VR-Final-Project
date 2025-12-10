@@ -15,6 +15,8 @@ TagManager:
   - Target
   - star
   - marble
+  - wire
+  - bendoor
   layers:
   - Default
   - TransparentFX
