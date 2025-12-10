@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using System;
+using UnityEngine.SceneManagement;
 
 public class Winning : MonoBehaviour
 {
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grab;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+   
     void Start()
     {
        gameObject.SetActive(false); 
@@ -14,17 +16,26 @@ public class Winning : MonoBehaviour
         if (grab == null){
             Debug.Log("Error, no grab interactable");
         }
-        else if (grab != null){
+        
+    }
+    void OnEnable()
+    {
+     if (grab != null){
             grab.selectEntered.AddListener(OnGrab);
-        }
+        }   
+    }
+     void OnDisable()
+    {
+     if (grab != null){
+            grab.selectEntered.RemoveListener(OnGrab);
+        }   
     }
     void OnGrab(SelectEnterEventArgs args){
-        //SceneManager.LoadScene("next");
-        grab.selectEntered.RemoveListener(OnGrab);
+        SceneManager.LoadScene("VR Room");
 
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         transform.Rotate(new Vector3(1f,1f,1f));
