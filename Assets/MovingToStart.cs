@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class ColllisionScript : MonoBehaviour
+public class MovingToStart : MonoBehaviour
 {
-    Vector3 targetPosition = new Vector3(-0.327f, -0.106f, -1.53f);
+    
     Vector3 direction = new Vector3(-0.327f, 4f, -1.53f);
  
     
@@ -11,6 +11,8 @@ public class ColllisionScript : MonoBehaviour
 
     private Transform target;
     public GameObject ring;
+    public GameObject key;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     void Start()
@@ -28,22 +30,25 @@ public class ColllisionScript : MonoBehaviour
 
     void onTriggerEnter(Collider col){
         if(col.tag == "wire"){
-            gameObject.moveToStart();
+            MovingToStart.moveToStart(ring);
+        }
+        else if (col.tag == "Winner"){
+            Winning.win(key);
         }
         
     }
-    void moveToStart(){
-        
-        GetComponent<Collider>().enabled = false;
-        transform.eulerAngles = new Vector3(90f, 0f, 0f);
-        while (gemaObject.transform.position != targetPosition /*|| this.transform.rotation != targetRotation*/){
-            float step = speed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
+    static void moveToStart(GameObject obj){
+        Vector3 targetPosition = new Vector3(-0.327f, -0.106f, -1.53f);
+        obj.GetComponent<Collider>().enabled = false;
+        obj.transform.eulerAngles = new Vector3(90f, 0f, 0f);
+        while (obj.transform.position != targetPosition /*|| this.transform.rotation != targetRotation*/){
+            float step = 2 * Time.deltaTime;
+            obj.transform.position = Vector3.MoveTowards(obj.transform.position, targetPosition, step);
             //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, step);
             
         }
         Debug.Log("Movement finished");
-        GetComponent<Collider>().enabled = true;
+        obj.GetComponent<Collider>().enabled = true;
        // GetComponent<Rigidbody>().enabled = true;
         
     }
@@ -51,4 +56,6 @@ public class ColllisionScript : MonoBehaviour
     // Update is called once per frame
 
         
+        
+    
 }

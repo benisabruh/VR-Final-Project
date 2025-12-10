@@ -13,6 +13,7 @@ TagManager:
   - Trail
   - PickUp
   - Target
+  - wire
   layers:
   - Default
   - TransparentFX
