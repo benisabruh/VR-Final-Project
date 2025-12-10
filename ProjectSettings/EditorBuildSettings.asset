@@ -83,7 +83,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lazer Puzzle.unity
     guid: 8454c264a8d334779ba86d2f47d360dd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Ring MAze.unity
     guid: d18bdca1535f0f249a4afbdd46ce4765
   m_configObjects:
