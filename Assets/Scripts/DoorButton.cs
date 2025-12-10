@@ -1,19 +1,25 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Button : MonoBehaviour
+public class DoorButton : MonoBehaviour
 {
-   public float deadTime = 1.0f;
+    public float deadTime = 1.0f;
 //Bool used to lock down button during its set dead time 
 private bool _deadTimeActive = false;
 //public Unity Events we can use in the editor and tie other functions to. 
 public UnityEvent onPressed, onReleased;
 
+
+
 private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Button" && !_deadTimeActive)
+        if(other.tag == "DoorButton" && !_deadTimeActive)
+        {
+            onPressed?.Invoke();
+        }
+
+        if(other.tag == "DoorButton" && !_deadTimeActive)
         {
             onPressed?.Invoke();
         }
@@ -21,7 +27,7 @@ private void OnTriggerEnter(Collider other)
 
 private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "Button" && !_deadTimeActive)
+        if(other.tag == "DoorButton" && !_deadTimeActive)
         {
             onReleased?.Invoke();
             StartCoroutine(WaitForDeadTime());

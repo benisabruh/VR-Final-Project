@@ -13,6 +13,8 @@ TagManager:
   - Trail
   - PickUp
   - Target
+  - Button
+  - DoorButton
   - star
   - marble
   - wire
