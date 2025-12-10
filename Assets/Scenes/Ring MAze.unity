@@ -401,7 +401,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
 --- !u!1001 &189898148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -536,8 +535,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2039533825}
   m_SourcePrefab: {fileID: 100100000, guid: 78df1db2fbc8ec64f949fac0c05bf693, type: 3}
-=======
->>>>>>> parent of 2837a79 (Merge branch 'main' of https://github.com/benisabruh/VR-Final-Project)
 --- !u!1 &230182096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,7 +2029,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
 --- !u!1 &593206511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2643,8 +2639,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685575122}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-=======
->>>>>>> parent of 2837a79 (Merge branch 'main' of https://github.com/benisabruh/VR-Final-Project)
 --- !u!1 &692476641
 GameObject:
   m_ObjectHideFlags: 0
@@ -7560,17 +7554,10 @@ PrefabInstance:
       addedObject: {fileID: 1641383706}
     - targetCorrespondingSourceObject: {fileID: 108428, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
       insertIndex: -1
-<<<<<<< HEAD
       addedObject: {fileID: 1641383708}
     - targetCorrespondingSourceObject: {fileID: 108428, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1641383711}
-=======
-      addedObject: {fileID: 1641383705}
-    - targetCorrespondingSourceObject: {fileID: 108428, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1641383704}
->>>>>>> parent of 2837a79 (Merge branch 'main' of https://github.com/benisabruh/VR-Final-Project)
     - targetCorrespondingSourceObject: {fileID: 102510, guid: 9a763c773ef7fff45b44fbb1a796b309, type: 3}
       insertIndex: -1
       addedObject: {fileID: 897285975}
@@ -7772,7 +7759,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
 --- !u!114 &1641383708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7811,8 +7797,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
-=======
->>>>>>> parent of 2837a79 (Merge branch 'main' of https://github.com/benisabruh/VR-Final-Project)
 --- !u!1 &1655364107
 GameObject:
   m_ObjectHideFlags: 0
@@ -9045,7 +9029,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &1936985600
 GameObject:
   m_ObjectHideFlags: 0
@@ -9361,9 +9344,6 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &2058531575
-=======
---- !u!1 &2077181631
->>>>>>> parent of 2837a79 (Merge branch 'main' of https://github.com/benisabruh/VR-Final-Project)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
