@@ -2,9 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-
 public class PushButtonTwo : MonoBehaviour
-
 {
     public float deadTime = 1.0f;
 private bool _deadTimeActive = false;
