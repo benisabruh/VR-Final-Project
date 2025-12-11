@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 public class DoorButton : MonoBehaviour
 {
+   
     public float deadTime = 1.0f;
 //Bool used to lock down button during its set dead time 
 private bool _deadTimeActive = false;
@@ -19,10 +20,6 @@ private void OnTriggerEnter(Collider other)
             onPressed?.Invoke();
         }
 
-        if(other.tag == "DoorButton" && !_deadTimeActive)
-        {
-            onPressed?.Invoke();
-        }
     }
 
 private void OnTriggerExit(Collider other)

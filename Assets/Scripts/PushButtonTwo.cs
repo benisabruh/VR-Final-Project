@@ -2,11 +2,9 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-<<<<<<<< Updated upstream:Assets/Scripts/PushButtonTwo.cs
+
 public class PushButtonTwo : MonoBehaviour
-========
-public class PushButton : MonoBehaviour
->>>>>>>> Stashed changes:Assets/Scripts/PushButton.cs
+
 {
     public float deadTime = 1.0f;
 private bool _deadTimeActive = false;

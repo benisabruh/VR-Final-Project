@@ -17,6 +17,8 @@ TagManager:
   - marble
   - wire
   - bendoor
+  - Button
+  - DoorButton
   layers:
   - Default
   - TransparentFX
