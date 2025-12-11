@@ -1,8 +1,10 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class DoorButton : MonoBehaviour
+public class DoorButton : XRBaseInteractable
 {
    
     public float deadTime = 1.0f;
@@ -13,28 +15,20 @@ public UnityEvent onPressed, onReleased;
 
 
 
-private void OnTriggerEnter(Collider other)
+// Called when the button is "grabbed" or pressed
+    protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        if(other.tag == "DoorButton" && !_deadTimeActive)
-        {
-            onPressed?.Invoke();
-        }
-
+        base.OnSelectEntered(args);
+        onPressed?.Invoke();
+        transform.localPosition += new Vector3(0, -0.02f, 0);
     }
 
-private void OnTriggerExit(Collider other)
+    // Called when the button is released
+    protected override void OnSelectExited(SelectExitEventArgs args)
     {
-        if(other.tag == "DoorButton" && !_deadTimeActive)
-        {
-            onReleased?.Invoke();
-            StartCoroutine(WaitForDeadTime());
-        }
+        base.OnSelectExited(args);
+        onReleased?.Invoke();
+        transform.localPosition += new Vector3(0, 0.02f, 0);
     }
 
-    IEnumerator WaitForDeadTime()
-    {
-        _deadTimeActive = true;
-        yield return new WaitForSeconds(deadTime);
-         _deadTimeActive = false;
-    }
 }

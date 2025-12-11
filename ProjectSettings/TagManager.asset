@@ -19,6 +19,7 @@ TagManager:
   - bendoor
   - Button
   - DoorButton
+  - VRroomDoor
   layers:
   - Default
   - TransparentFX
