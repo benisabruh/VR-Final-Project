@@ -800,7 +800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 125588, guid: ea798cfb4939d4441b95d1bd39d0767f, type: 3}
       propertyPath: m_TagString
-      value: VRroomDoor
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 451040, guid: ea798cfb4939d4441b95d1bd39d0767f, type: 3}
       propertyPath: m_LocalScale.x
@@ -852,33 +852,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 451040, guid: ea798cfb4939d4441b95d1bd39d0767f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1237320130}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 125588, guid: ea798cfb4939d4441b95d1bd39d0767f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 328450938}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea798cfb4939d4441b95d1bd39d0767f, type: 3}
 --- !u!4 &328450936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 451040, guid: ea798cfb4939d4441b95d1bd39d0767f, type: 3}
   m_PrefabInstance: {fileID: 328450935}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &328450937 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 125588, guid: ea798cfb4939d4441b95d1bd39d0767f, type: 3}
-  m_PrefabInstance: {fileID: 328450935}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &328450938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328450937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ea2720f118a0c84a92f776df9926d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &348142797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2925,6 +2905,7 @@ GameObject:
   - component: {fileID: 1065002092}
   - component: {fileID: 1065002093}
   - component: {fileID: 1065002094}
+  - component: {fileID: 1065002095}
   m_Layer: 0
   m_Name: Left Hand Controller
   m_TagString: Untagged
@@ -3032,6 +3013,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ad86f52f24dc942bac425d1b2fec16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUpObject
+--- !u!114 &1065002095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065002091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ea2720f118a0c84a92f776df9926d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VRRoomSceneChange
 --- !u!1 &1072054302
 GameObject:
   m_ObjectHideFlags: 0
@@ -4043,9 +4036,10 @@ GameObject:
   - component: {fileID: 1237320127}
   - component: {fileID: 1237320128}
   - component: {fileID: 1237320126}
+  - component: {fileID: 1237320131}
   m_Layer: 0
   m_Name: GlassHologram
-  m_TagString: Untagged
+  m_TagString: VRroomDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4156,6 +4150,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 328450936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1237320131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237320125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ea2720f118a0c84a92f776df9926d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VRRoomSceneChange
 --- !u!1001 &1254048595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6677,6 +6683,7 @@ GameObject:
   - component: {fileID: 2075610362}
   - component: {fileID: 2075610363}
   - component: {fileID: 2075610364}
+  - component: {fileID: 2075610365}
   m_Layer: 0
   m_Name: Right Hand Controller
   m_TagString: Untagged
@@ -6784,6 +6791,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ad86f52f24dc942bac425d1b2fec16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUpObject
+--- !u!114 &2075610365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075610361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ea2720f118a0c84a92f776df9926d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VRRoomSceneChange
 --- !u!1 &2098209353
 GameObject:
   m_ObjectHideFlags: 0
