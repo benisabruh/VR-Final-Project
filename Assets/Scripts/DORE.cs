@@ -12,7 +12,11 @@ public class DORE : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player") SceneManager.LoadScene("Ring MAze");
+        if (other.gameObject.tag == "Player")
+        {
+            if (lazers != null && lazers.done)
+                SceneManager.LoadScene("Ring MAze");
+        }
     }
 
     void OnSolved()
