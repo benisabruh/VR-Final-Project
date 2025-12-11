@@ -6725,7 +6725,7 @@ GameObject:
   - component: {fileID: 1736623574}
   - component: {fileID: 1736623573}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: doorhitbox
   m_TagString: bendoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
