@@ -6190,6 +6190,7 @@ GameObject:
   - component: {fileID: 1277709163}
   - component: {fileID: 1277709162}
   - component: {fileID: 1277709161}
+  - component: {fileID: 1277709165}
   m_Layer: 0
   m_Name: MetalstaffLargeRing
   m_TagString: Untagged
@@ -6536,6 +6537,21 @@ CapsuleCollider:
   m_Height: 0.1226451
   m_Direction: 1
   m_Center: {x: 0.060463883, y: -0.0033060182, z: 0.0007360966}
+--- !u!114 &1277709165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277709154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d61ed740a5032845ba3db8224e54075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovingToStart
+  ring: {fileID: 1277709154}
+  key: {fileID: 2039533820}
+  forceShowOnStart: 1
 --- !u!1 &1283389994
 GameObject:
   m_ObjectHideFlags: 0

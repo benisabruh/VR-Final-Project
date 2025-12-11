@@ -15,7 +15,7 @@ public class DORE : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             if (lazers != null && lazers.done)
-                SceneManager.LoadScene("VR Room");
+                SceneManager.LoadScene("Ring MAze");
         }
     }
 

@@ -46,8 +46,10 @@ public class MovingToStart : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
+        key.SetActive(true);
         if (col.tag == "wire")
         {
+            
             StartCoroutine(MoveToStartCoroutine(ring));
         }
         else if (col.tag == "Winner")
