@@ -12,6 +12,8 @@ public class DoorButton : XRBaseInteractable
 private bool _deadTimeActive = false;
 //public Unity Events we can use in the editor and tie other functions to. 
 public UnityEvent onPressed, onReleased;
+    
+    Vector3 _initialLocalPosition;
 
 
 
@@ -19,16 +21,56 @@ public UnityEvent onPressed, onReleased;
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
-        onPressed?.Invoke();
-        transform.localPosition += new Vector3(0, -0.02f, 0);
+        HandlePress();
     }
 
     // Called when the button is released
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
         base.OnSelectExited(args);
+        HandleRelease();
+    }
+
+    protected override void OnActivated(ActivateEventArgs args)
+    {
+        base.OnActivated(args);
+        HandlePress();
+    }
+
+    protected override void OnDeactivated(DeactivateEventArgs args)
+    {
+        base.OnDeactivated(args);
+        HandleRelease();
+    }
+
+    protected override void Awake()
+    {
+        base.Awake();
+        _initialLocalPosition = transform.localPosition;
+    }
+
+    void HandlePress()
+    {
+        if (_deadTimeActive) return;
+        Debug.Log($"[DoorButton] Pressed on '{gameObject.name}'");
+        onPressed?.Invoke();
+        transform.localPosition = _initialLocalPosition + new Vector3(0, -0.02f, 0);
+    }
+
+    void HandleRelease()
+    {
+        if (_deadTimeActive) return;
+        Debug.Log($"[DoorButton] Released on '{gameObject.name}'");
         onReleased?.Invoke();
-        transform.localPosition += new Vector3(0, 0.02f, 0);
+        transform.localPosition = _initialLocalPosition;
+        StartCoroutine(WaitForDeadTime());
+    }
+
+    IEnumerator WaitForDeadTime()
+    {
+        _deadTimeActive = true;
+        yield return new WaitForSeconds(deadTime);
+        _deadTimeActive = false;
     }
 
 }

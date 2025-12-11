@@ -8,7 +8,9 @@ public class Winning : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       gameObject.SetActive(false); 
+         // Previously this disabled the GameObject on Start which hid the staff.
+         // Commented out so the object remains active and visible.
+         // gameObject.SetActive(false);
     }
     void Awake(){
         grab = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
