@@ -52,7 +52,6 @@ public UnityEvent onPressed, onReleased;
     void HandlePress()
     {
         if (_deadTimeActive) return;
-        Debug.Log($"[DoorButton] Pressed on '{gameObject.name}'");
         onPressed?.Invoke();
         transform.localPosition = _initialLocalPosition + new Vector3(0, -0.02f, 0);
     }
@@ -60,7 +59,6 @@ public UnityEvent onPressed, onReleased;
     void HandleRelease()
     {
         if (_deadTimeActive) return;
-        Debug.Log($"[DoorButton] Released on '{gameObject.name}'");
         onReleased?.Invoke();
         transform.localPosition = _initialLocalPosition;
         StartCoroutine(WaitForDeadTime());

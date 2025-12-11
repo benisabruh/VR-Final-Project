@@ -1,34 +1,65 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class PushButtonTwo : MonoBehaviour
+public class PushButtonTwo : XRBaseInteractable
 {
     public float deadTime = 1.0f;
-private bool _deadTimeActive = false;
-public UnityEvent onPressed, onReleased;
+    private bool _deadTimeActive = false;
+    public UnityEvent onPressed, onReleased;
+    Vector3 _initialLocalPosition;
 
-private void OnTriggerEnter(Collider other)
+    protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        if(other.tag == "Button" && !_deadTimeActive)
-        {
-            onPressed?.Invoke();
-        }
+        base.OnSelectEntered(args);
+        HandlePress();
     }
 
-private void OnTriggerExit(Collider other)
+    protected override void OnSelectExited(SelectExitEventArgs args)
     {
-        if(other.tag == "Button" && !_deadTimeActive)
-        {
-            onReleased?.Invoke();
-            StartCoroutine(WaitForDeadTime());
-        }
+        base.OnSelectExited(args);
+        HandleRelease();
+    }
+
+    protected override void OnActivated(ActivateEventArgs args)
+    {
+        base.OnActivated(args);
+        HandlePress();
+    }
+
+    protected override void OnDeactivated(DeactivateEventArgs args)
+    {
+        base.OnDeactivated(args);
+        HandleRelease();
+    }
+
+    protected override void Awake()
+    {
+        base.Awake();
+        _initialLocalPosition = transform.localPosition;
+    }
+
+    void HandlePress()
+    {
+        if (_deadTimeActive) return;
+        onPressed?.Invoke();
+        transform.localPosition = _initialLocalPosition + new Vector3(0, -0.02f, 0);
+    }
+
+    void HandleRelease()
+    {
+        if (_deadTimeActive) return;
+        onReleased?.Invoke();
+        transform.localPosition = _initialLocalPosition;
+        StartCoroutine(WaitForDeadTime());
     }
 
     IEnumerator WaitForDeadTime()
     {
         _deadTimeActive = true;
         yield return new WaitForSeconds(deadTime);
-         _deadTimeActive = false;
+        _deadTimeActive = false;
     }
 }
