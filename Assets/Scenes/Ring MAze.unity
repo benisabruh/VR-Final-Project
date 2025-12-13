@@ -5890,7 +5890,6 @@ GameObject:
   - component: {fileID: 1174668541}
   - component: {fileID: 1174668540}
   - component: {fileID: 1174668539}
-  - component: {fileID: 1174668538}
   - component: {fileID: 1174668537}
   m_Layer: 0
   m_Name: Cube (1)
@@ -5914,33 +5913,6 @@ MonoBehaviour:
   ring: {fileID: 1277709154}
   key: {fileID: 2039533820}
   forceShowOnStart: 1
---- !u!54 &1174668538
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174668536}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &1174668539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6045,7 +6017,6 @@ GameObject:
   - component: {fileID: 1198381161}
   - component: {fileID: 1198381160}
   - component: {fileID: 1198381159}
-  - component: {fileID: 1198381158}
   - component: {fileID: 1198381157}
   m_Layer: 0
   m_Name: Cube (2)
@@ -6069,33 +6040,6 @@ MonoBehaviour:
   ring: {fileID: 1277709154}
   key: {fileID: 2039533820}
   forceShowOnStart: 1
---- !u!54 &1198381158
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198381156}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &1198381159
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9347,7 +9291,6 @@ GameObject:
   - component: {fileID: 1999813135}
   - component: {fileID: 1999813134}
   - component: {fileID: 1999813133}
-  - component: {fileID: 1999813132}
   - component: {fileID: 1999813131}
   m_Layer: 0
   m_Name: Cube (4)
@@ -9371,33 +9314,6 @@ MonoBehaviour:
   ring: {fileID: 1277709154}
   key: {fileID: 2039533820}
   forceShowOnStart: 1
---- !u!54 &1999813132
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999813130}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &1999813133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9892,7 +9808,6 @@ GameObject:
   - component: {fileID: 2134481443}
   - component: {fileID: 2134481442}
   - component: {fileID: 2134481441}
-  - component: {fileID: 2134481440}
   - component: {fileID: 2134481439}
   m_Layer: 0
   m_Name: Cube (3)
@@ -9916,33 +9831,6 @@ MonoBehaviour:
   ring: {fileID: 1277709154}
   key: {fileID: 2039533820}
   forceShowOnStart: 1
---- !u!54 &2134481440
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134481438}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &2134481441
 BoxCollider:
   m_ObjectHideFlags: 0
