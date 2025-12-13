@@ -21,6 +21,7 @@ TagManager:
   - DoorButton
   - VRroomDoor
   - shutdoor
+  - Winner
   layers:
   - Default
   - TransparentFX
