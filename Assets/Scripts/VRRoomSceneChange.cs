@@ -9,6 +9,8 @@ public class VRRoomSceneChange : MonoBehaviour
     {
         if (other.tag == "VRroomDoor")
         {
+            if (GLOBALTimer.Instance != null)
+                GLOBALTimer.Instance.StartTimer();
             SceneManager.LoadScene("maze Room");
         }
     }
@@ -20,5 +22,7 @@ public class VRRoomSceneChange : MonoBehaviour
         {
             door_1.SetActive(false);
         }
+        if (GLOBALTimer.Instance != null)
+            GLOBALTimer.Instance.StartTimer();
     }
 }
