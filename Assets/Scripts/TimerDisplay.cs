@@ -7,7 +7,7 @@ using TMPro;
 public class TimerDisplay : MonoBehaviour
 {
     public Text uiText;
-    public TextMeshProUGUI tmpText;
+    public TextMeshPro tmpText;
 
     void Update()
     {
