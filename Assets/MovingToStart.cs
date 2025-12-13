@@ -49,8 +49,9 @@ public class MovingToStart : MonoBehaviour
         
         if (col.tag == "wire")
         {
-            key.SetActive(true);
-            StartCoroutine(MoveToStartCoroutine(ring));
+            ring.transform.position = new Vector3(-0.323f, 0.027f, 0.964f);
+            ring.transform.eulerAngles = new Vector3(90f, 0f, 0f);
+            
         }
         else if (col.tag == "Winner")
         {
