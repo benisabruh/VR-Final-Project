@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Winning : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class Winning : MonoBehaviour
         }
     }
     void OnGrab(SelectEnterEventArgs args){
-        //SceneManager.LoadScene("next");
+        SceneManager.LoadScene("VR Room");
         grab.selectEntered.RemoveListener(OnGrab);
 
     }
