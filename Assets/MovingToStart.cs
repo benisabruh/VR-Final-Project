@@ -17,10 +17,19 @@ public class MovingToStart : MonoBehaviour
     // XR references
     private XRGrabInteractable grab;
     private XRInteractionManager interactionManager;
+    
+    //New code here🔥🔥🔥🔥🔥
+    public GameObject handle;
+    
 
     [System.Obsolete]
     void Start()
     {
+        //New code here🔥🔥🔥🔥🔥
+        if(handle.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>() == null)
+        {
+            Debug.LogWarning("Handle does not have XR interaction.");
+        }
         if (key == null)
         {
             Debug.LogWarning("MovingToStart: 'key' is not assigned in the Inspector.");
@@ -53,6 +62,7 @@ public class MovingToStart : MonoBehaviour
         {
             Debug.Log("This GameObject has a Collider");
         }
+        
     }
 
     void OnTriggerEnter(Collider col)
@@ -69,9 +79,11 @@ public class MovingToStart : MonoBehaviour
                     (IXRSelectInteractable)grab
                 );
             }
-
+            //New code here🔥🔥🔥🔥🔥
+            handle.gameObject.SetActive(false);
             ring.transform.position = new Vector3(-0.323f, 0.027f, 0.964f);
             ring.transform.eulerAngles = new Vector3(90f, 0f, 0f);
+            handle.gameObject.SetActive(true);
         }
         else if (col.CompareTag("Winner"))
         {
@@ -79,35 +91,7 @@ public class MovingToStart : MonoBehaviour
         }
     }
 
-    IEnumerator MoveToStartCoroutine(GameObject obj)
-    {
-        Vector3 targetPosition = new Vector3(-0.327f, -0.106f, -1.53f);
 
-        if (obj == null)
-        {
-            Debug.LogWarning("MoveToStartCoroutine called with null object");
-            yield break;
-        }
-
-        var objCollider = obj.GetComponent<Collider>();
-        if (objCollider != null)
-            objCollider.enabled = false;
-
-        if (!obj.activeInHierarchy)
-            obj.SetActive(true);
-
-        obj.transform.eulerAngles = new Vector3(90f, 0f, 0f);
-
-        while (obj.transform.position != targetPosition)
-        {
-            float step = 2f * Time.deltaTime;
-            obj.transform.position = Vector3.MoveTowards(obj.transform.position, targetPosition, step);
-            yield return null;
-        }
-
-        if (objCollider != null)
-            objCollider.enabled = true;
-    }
 
     private void LogAndForceShow(GameObject obj, string name)
     {
