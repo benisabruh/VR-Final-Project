@@ -52,6 +52,6 @@ public class GLOBALTimer : MonoBehaviour
     public string GetFormattedTime()
     {
         TimeSpan t = TimeSpan.FromSeconds(elapsedTime);
-        return string.Format("{0:D2}:{1:D2}.{2:D3}", t.Minutes, t.Seconds, t.Milliseconds);
+        return string.Format("{0:D2}:{1:D2}.{2:D1}", t.Minutes, t.Seconds, t.Milliseconds);
     }
 }

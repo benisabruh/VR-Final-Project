@@ -29,7 +29,11 @@ public class Winning : MonoBehaviour
             grab.selectEntered.RemoveListener(OnGrab);
         }
     }
-    void OnGrab(SelectEnterEventArgs args){
+    void OnGrab(SelectEnterEventArgs args)
+    {
+        if (GLOBALTimer.Instance != null)
+            GLOBALTimer.Instance.StopTimer();
+        
         SceneManager.LoadScene("VR Room");
         grab.selectEntered.RemoveListener(OnGrab);
 
