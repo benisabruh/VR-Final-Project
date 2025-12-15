@@ -62,7 +62,7 @@ public class MovingToStart : MonoBehaviour
     }
     IEnumerator MoveToStartCoroutine(GameObject obj)
     {
-        Vector3 targetPosition = new Vector3(-0.317f, 0.75f, 0.958f);
+        Vector3 targetPosition = new Vector3(-0.327f, -0.106f, -1.53f);
         if (obj == null)
         {
             Debug.LogWarning("MoveToStartCoroutine called with null object");
