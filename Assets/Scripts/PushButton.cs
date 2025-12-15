@@ -8,64 +8,45 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 public class PushButton : XRBaseInteractable
 
 {
-    public float deadTime = 1.0f;
-private bool _deadTimeActive = false;
-public UnityEvent onPressed, onReleased;
-    Vector3 _initialLocalPosition;
+    public Transform button;   // The mesh that moves
+    public float pressDepth = 0.02f; // How far it moves down
+    public float returnSpeed = 5f;   // How fast it returns
 
-// Called when the button is "pressed" (controller/hand selects it)
-    // Called when the button is "grabbed" or pressed
-    protected override void OnSelectEntered(SelectEnterEventArgs args)
-    {
-        base.OnSelectEntered(args);
-        HandlePress();
-    }
-
-    // Called when the button is released
-    protected override void OnSelectExited(SelectExitEventArgs args)
-    {
-        base.OnSelectExited(args);
-        HandleRelease();
-    }
-
-    protected override void OnActivated(ActivateEventArgs args)
-    {
-        base.OnActivated(args);
-        HandlePress();
-    }
-
-    protected override void OnDeactivated(DeactivateEventArgs args)
-    {
-        base.OnDeactivated(args);
-        HandleRelease();
-    }
+    private Vector3 initialPos;
+    private bool isPressed = false;
 
     protected override void Awake()
     {
         base.Awake();
-        _initialLocalPosition = transform.localPosition;
+        initialPos = button.localPosition;
     }
 
-    void HandlePress()
+    protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        if (_deadTimeActive) return;
-        onPressed?.Invoke();
-        transform.localPosition = _initialLocalPosition + new Vector3(0, -0.02f, 0);
+        base.OnSelectEntered(args);
+        isPressed = true;
+        button.localPosition = initialPos - new Vector3(0, pressDepth, 0);
+
+        Debug.Log("Button pressed!");
     }
 
-    void HandleRelease()
+    protected override void OnSelectExited(SelectExitEventArgs args)
     {
-        if (_deadTimeActive) return;
-        onReleased?.Invoke();
-        transform.localPosition = _initialLocalPosition;
-        StartCoroutine(WaitForDeadTime());
+        base.OnSelectExited(args);
+        isPressed = false;
     }
 
-    IEnumerator WaitForDeadTime()
+
+    void Update()
     {
-        _deadTimeActive = true;
-        yield return new WaitForSeconds(deadTime);
-        _deadTimeActive = false;
+        if (!isPressed)
+        {
+            button.localPosition = Vector3.Lerp(
+                button.localPosition,
+                initialPos,
+                Time.deltaTime * returnSpeed
+            );
+        }
     }
 
 
