@@ -4777,19 +4777,7 @@ MonoBehaviour:
   pressDistance: 0.1
   OnPress:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 353457611}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnRelease:
     m_PersistentCalls:
       m_Calls: []
@@ -9477,6 +9465,7 @@ Transform:
   - {fileID: 1871820420}
   - {fileID: 1690911622}
   - {fileID: 116451136}
+  - {fileID: 219118458}
   m_Father: {fileID: 1295793773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2075610363
@@ -9917,7 +9906,7 @@ PrefabInstance:
     - target: {fileID: 594592916652654795, guid: 3d91c34916729423da67ebe6fd17906f, type: 3}
       propertyPath: tmpText
       value: 
-      objectReference: {fileID: 1813449333}
+      objectReference: {fileID: 0}
     - target: {fileID: 1889079620362756072, guid: 3d91c34916729423da67ebe6fd17906f, type: 3}
       propertyPath: m_Name
       value: timer text
