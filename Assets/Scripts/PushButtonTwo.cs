@@ -4,27 +4,19 @@ using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class DoorButton : XRBaseInteractable
+public class PushButtonTwo : XRBaseInteractable
 {
-   
     public float deadTime = 1.0f;
-//Bool used to lock down button during its set dead time 
-private bool _deadTimeActive = false;
-//public Unity Events we can use in the editor and tie other functions to. 
-public UnityEvent onPressed, onReleased;
-    
+    private bool _deadTimeActive = false;
+    public UnityEvent onPressed, onReleased;
     Vector3 _initialLocalPosition;
 
-
-
-// Called when the button is "grabbed" or pressed
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
         HandlePress();
     }
 
-    // Called when the button is released
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
         base.OnSelectExited(args);
@@ -70,5 +62,4 @@ public UnityEvent onPressed, onReleased;
         yield return new WaitForSeconds(deadTime);
         _deadTimeActive = false;
     }
-
 }

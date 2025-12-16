@@ -3,12 +3,13 @@ using UnityEngine;
 public class DoorColorChanger : MonoBehaviour
 {
    public Renderer targetRenderer;
+   public Material newMaterial;
 
-    public void ChangeColor(Color newColor)
+    public void ChangeColor()
     {
         if (targetRenderer != null)
         {
-            targetRenderer.material.color = newColor;
+            targetRenderer.material = newMaterial;
         }
     }
 

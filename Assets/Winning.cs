@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Winning : MonoBehaviour
 {
@@ -8,7 +9,9 @@ public class Winning : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       gameObject.SetActive(false); 
+         // Previously this disabled the GameObject on Start which hid the staff.
+         // Commented out so the object remains active and visible.
+         // gameObject.SetActive(false);
     }
     void Awake(){
         grab = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
@@ -26,8 +29,12 @@ public class Winning : MonoBehaviour
             grab.selectEntered.RemoveListener(OnGrab);
         }
     }
-    void OnGrab(SelectEnterEventArgs args){
-        //SceneManager.LoadScene("next");
+    void OnGrab(SelectEnterEventArgs args)
+    {
+        if (GLOBALTimer.Instance != null)
+            GLOBALTimer.Instance.StopTimer();
+        
+        SceneManager.LoadScene("VR Room");
         grab.selectEntered.RemoveListener(OnGrab);
 
     }

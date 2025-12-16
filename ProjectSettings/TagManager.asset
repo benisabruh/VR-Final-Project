@@ -19,6 +19,11 @@ TagManager:
   - marble
   - wire
   - bendoor
+  - Button
+  - DoorButton
+  - VRroomDoor
+  - shutdoor
+  - Winner
   layers:
   - Default
   - TransparentFX
